@@ -2,8 +2,10 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     jshint: {
-      files: ['Gruntfile.js', 'static/js/**/*.js', 'test/**/*.js']
-    },
+      files: ['Gruntfile.js', 'static/js/**/*.js', 'test/**/*.js'],
+      options: {
+        'esnext': 6,
+      }    },
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint', 'karma']
