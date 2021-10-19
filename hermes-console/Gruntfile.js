@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     karma: {
       unit: {
         configFile: 'karma.config.js',
-        browsers: ['PhantomJS']
+        browsers: ['ChromeHeadless']
       }
     }
   });
